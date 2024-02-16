@@ -10,19 +10,20 @@ First, clone this repo to wherever you'll use the scripts. I usually use the `~/
 
 Now we want the ability to run the scripts from anywhere without navigating to this directory each time. We therefore need to add its location to your system's `PATH` environment variable.
 
-Open your .zshrc file:
+Set up and open your .zshrc file:
 
 ```shell
-code ~/.zshrc.
+touch ~/.zshrc
+code ~/.zshrc
 ```
 
-Add the path to the script directory:
+Once you have your zshrc file open, add the path to this script directory:
 
 ```
 export PATH="$PATH:/Users/danny/Developer/scripts"
 ```
 
-Save the file. Then reload your shell configuration in the terminal:
+Save that file. Back in terminal, reload your shell configuration:
 
 ```shell
 source ~/.zshrc
